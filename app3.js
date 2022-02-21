@@ -48,7 +48,7 @@ function randomSelect() {
     clearInterval(interval);
 
     setTimeout(() => {
-      const randomTag = pickRandomTag;
+      const randomTag = pickRandomTag(); //forgot the () wich resulted in no selection!
 
       highlightTag(randomTag);
     }, 100);
